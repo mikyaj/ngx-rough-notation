@@ -11,10 +11,13 @@ This is an Angular wrapper for [RoughNotation](https://roughnotation.com/), a sm
 
 ## Installation
 
-You have to install rough-notation to make this wrapper work as it is a peer-dependency of this wrapper.
-
+Install rough-notation, which is peer dependency to this wrapper.
 ```
 npm install --save rough-notation
+```
+Install wrapper.
+```
+npm install --save ngx-rough-notation
 ```
 
 Import wrapper module into your app mobule

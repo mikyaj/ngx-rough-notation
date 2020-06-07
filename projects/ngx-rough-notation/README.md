@@ -11,10 +11,13 @@ This is an Angular wrapper for [RoughNotation](https://roughnotation.com/), a sm
 
 ## Installation
 
-You have to install rough-notation to make this wrapper work as it is a peer-dependency of this wrapper.
-
+Install rough-notation, which is peer dependency to this wrapper.
 ```
 npm install --save rough-notation
+```
+Install wrapper.
+```
+npm install --save ngx-rough-notation
 ```
 
 Import wrapper module into your app mobule
@@ -45,7 +48,6 @@ Following configurations can be passed to compeo
 | animationDuration   | `number`                                                         | `800`                                                                                                                                                                                 | Duration of the animation in milliseconds                                                                                                                                                                                                                                                    |
 | color               | `string`                                                         |                                                                                                                                                                                       | String value representing the color of the annotation sketch                                                                                              
 | iterations          | `number`                                                         | `2`                                                                                                                                                                                   | By default annotations are drawn in two iterations, e.g. when underlining, drawing from left to right and then back from right to left. Setting this property can let you configure the number of iterations.                                                                                |
-| order               | `number`, `string`                                               |                                                                                                                                                                                       | Annotation order to animate if is inside an Annotation Group                                                                                                                                                                                                                                 |
 | padding             | `number`, `[top, right, bottom, left]`, `[vertical, horizontal]` | `5`                                                                                                                                                                                   | Padding in pixels between the element and roughly where the annotation is drawn. If you wish to specify different `top`, `left`, `right`, `bottom` paddings, you can set the value to an array akin to CSS style padding `[top, right, bottom, left]` or just `[top & bottom, left & right]` |
 | show                | `boolean`                                                        | `false`                                                                                                                                                                               | Show/hide the annotation                                                                                                                                                                                                                                                                     |
 | strokeWidth         | `number`                                                         | `1 | Width of the annotation strokes | | type |`enum`|`underline`,`box`,`circle`,`highlight`,`strike-through`,`crossed-off` | This is a mandatory field. It sets the annotation style |
@@ -61,9 +63,9 @@ Following configurations can be passed to compeo
 | strike-through | This style draws a box around the element               |
 | crossed-off    | This style draws a box around the element               |
 
-## RoughNotationGroup Component
+## RoughNotation Group Component
 
-This is a wrapper for multiple annotations, it will trigger the `show()` method on every child annotation after the prev annotation animation is complete.
+This is a wrapper for multiple annotations, it will trigger the `show()` method on every child annotation.
 
 ### Usage
 
@@ -78,11 +80,11 @@ This is a wrapper for multiple annotations, it will trigger the `show()` method 
 </rough-notation-group>
 ```
 
-### Props
+### Properties
 
 | name | type    | default | description                |
 | ---- | ------- | ------- | -------------------------- |
-| show | boolean |         | show/hides the annotations |
+| show | boolean |  false  | show/hides the annotations |
 
 
 ## TODO
