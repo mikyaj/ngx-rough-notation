@@ -8,6 +8,8 @@ This is an Angular wrapper for [RoughNotation](https://roughnotation.com/), a sm
 
 ![Rough Notation logo](https://roughnotation.com/images/social.png)
 
+## Demo
+You can play around with the demo [here](https://stackblitz.com/edit/angular-n9jsex).
 
 ## Installation
 
