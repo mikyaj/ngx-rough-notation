@@ -1,0 +1,113 @@
+<div>
+  <div class="content">
+    <rough-notation type="highlight" color="#fff176">
+      <h1>Angular Rough Notation Playground</h1>
+    </rough-notation>
+  </div>
+  <div class="box" style="background-color: rgb(255, 235, 238);">
+    <div class="content">
+      <h3>
+        <rough-notation type="underline" color="#b71c1c" [show]="annotations.underline">
+          Underline
+        </rough-notation>
+      </h3>
+      <p>create a sketchy <rough-notation type="underline" color="#b71c1c" [show]="annotations.underline" #underline>
+          underline</rough-notation> below an element.
+      </p>
+      <button class="button" type="button" (click)="annotations.underline = !annotations.underline">
+        Annotate
+      </button>
+    </div>
+  </div>
+  <div class="box" style="background-color: rgb(243, 229, 245);">
+    <div class="content">
+      <h3>
+        <rough-notation type="box" color="#4a148c" [show]="annotations.box" animationDuration="3500">Box
+        </rough-notation>
+      </h3>
+      <p>This style draws a <rough-notation type="box" color="#4a148c" [show]="annotations.box"
+          animationDuration="3500">box</rough-notation>
+        around the element.</p>
+      <button class="button" type="button" (click)="annotations.box = !annotations.box">
+        Annotate
+      </button>
+    </div>
+  </div>
+  <div class="box" style="background-color: rgb(227, 242, 253);">
+    <div class="content">
+      <h3>
+        <rough-notation type="circle" color="#0d47a1" [show]="annotations.circle" strokeWidth="3">Circle
+        </rough-notation>
+      </h3>
+      <p>
+        Draw a <rough-notation type="circle" color="#0d47a1" [show]="annotations.circle" strokeWidth="3">circle
+        </rough-notation> around
+        the element.</p>
+      <button class="button" type="button" (click)="annotations.circle = !annotations.circle">
+        Annotate
+      </button>
+    </div>
+  </div>
+  <div class="box" style="background-color: rgb(245, 245, 245);">
+    <div class="content">
+      <h3>
+        <rough-notation type="highlight" color="#ffd54f" [show]="annotations.highlight">Highlight</rough-notation>
+      </h3>
+      <p>Creates a <rough-notation type="highlight" color="#ffd54f" [show]="annotations.highlight">highlight
+        </rough-notation>
+        effect as if marked
+        by a highlighter.</p>
+      <button class="button" type="button" (click)="annotations.highlight = !annotations.highlight">
+        Annotate
+      </button>
+    </div>
+  </div>
+  <div class="box" style="background-color: rgb(232, 245, 233);">
+    <div class="content">
+      <h3>
+        <rough-notation type="strike-through" color="#1b5e20" [show]="annotations.strikeThrough"> Strike-through
+        </rough-notation>
+      </h3>
+      <p>Draw a hand-drawn line through an element creating a <rough-notation type="strike-through" color="#1b5e20"
+          [show]="annotations.strikeThrough">
+          stroke-through</rough-notation> effect.</p>
+      <button class="button" type="button" (click)="annotations.strikeThrough = !annotations.strikeThrough">
+        Annotate
+      </button>
+    </div>
+  </div>
+  <div class="box" style="background-color: rgb(255, 253, 231);">
+    <div class="content">
+      <h3>
+        <rough-notation type="crossed-off" color="#f57f17" [show]="annotations.crossedOff" iterations="10">Crossed-off
+        </rough-notation>
+      </h3>
+      <p>To symbolize rejection, use a <rough-notation type="crossed-off" color="#f57f17"
+          [show]="annotations.crossedOff" iterations="10">crossed-off
+        </rough-notation>effect on an element..</p>
+      <button class="button" type="button" (click)="annotations.crossedOff = !annotations.crossedOff">
+        Annotate
+      </button>
+    </div>
+  </div>
+  <div class="box" style="background-color: rgb(251, 233, 231);">
+    <div class="content">
+      <rough-notation-group [show]="annotations.group">
+        <h3>
+          <rough-notation type="circle" color="#f57f17" iterations="10">Annotation Group
+          </rough-notation>
+        </h3>
+        <p>
+          Rough Notation provides a way to order the animation of annotations by creating an <rough-notation
+            type="highlight" color="#fff176">annotation-group</rough-notation>. Pass the
+          list of annotations to create a group. When <rough-notation type="crossed-off" color="#4a148c"
+            iterations="10">show</rough-notation> is called on the group, the annotations are animated in
+          order.
+        </p>
+      </rough-notation-group>
+      <button class="button" type="button" (click)="annotations.group = !annotations.group">
+        Annotate
+      </button>
+    </div>
+  </div>
+</div>

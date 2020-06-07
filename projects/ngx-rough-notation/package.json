@@ -1,0 +1,28 @@
+{
+  "name": "ngx-rough-notation",
+  "version": "0.1.0",
+  "description": "Angular wrapper for rough-notation",
+  "author": "Mudasser Ajaz",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mikyaj/ngx-rough-notation.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mikyaj/ngx-rough-notation/issues"
+  },
+  "homepage": "https://github.com/mikyaj/ngx-rough-notation",
+  "keywords": [
+    "angular",
+    "angular 8",
+    "angular 9",
+    "rough notation",
+    "angular rough notation",
+    "angular wrapper rough notation"
+  ],
+  "peerDependencies": {
+    "@angular/common": "^8.2.14",
+    "@angular/core": "^8.2.14",
+    "rough-notation": "^0.3.0"
+  },
+  "license": "MIT"
+}
