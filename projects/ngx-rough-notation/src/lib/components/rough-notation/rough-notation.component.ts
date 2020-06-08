@@ -13,6 +13,7 @@ export class RoughNotationComponent implements AfterContentInit, OnDestroy {
   @Input() type: types;
   @Input() animate = true;
   @Input() animationDuration = 800;
+  @Input() animationDelay = 0;
   @Input() color: string;
   @Input() strokeWidth = 1;
   @Input() padding: RoughNotationPadding = 5;
@@ -35,6 +36,7 @@ export class RoughNotationComponent implements AfterContentInit, OnDestroy {
         color: this.color,
         animate: this.animate,
         animationDuration: this.animationDuration,
+        animationDelay: this.animationDelay,
         strokeWidth: this.strokeWidth,
         padding: this.padding,
         iterations: this.iterations
