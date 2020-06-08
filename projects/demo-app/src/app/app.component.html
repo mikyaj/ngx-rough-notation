@@ -1,6 +1,6 @@
 <div>
   <div class="content">
-    <rough-notation type="highlight" color="#fff176">
+    <rough-notation type="highlight" color="#fff176" [show]="true">
       <h1>Angular Rough Notation Playground</h1>
     </rough-notation>
   </div>
@@ -101,7 +101,7 @@
           Rough Notation provides a way to order the animation of annotations by creating an <rough-notation
             type="highlight" color="#fff176">annotation-group</rough-notation>. Pass the
           list of annotations to create a group. When <rough-notation type="crossed-off" color="#4a148c"
-            iterations="10">show</rough-notation> is called on the group, the annotations are animated in
+            iterations="10" animationDelay="800">show</rough-notation> is called on the group, the annotations are animated in
           order.
         </p>
       </rough-notation-group>
