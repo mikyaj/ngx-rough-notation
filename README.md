@@ -1,12 +1,10 @@
 # Angular wrapper for Rough Notation library
 
 
-This is an Angular wrapper for [RoughNotation](https://roughnotation.com/), a small JavaScript library to create and animate annotations on a web page.
+This is an Angular wrapper for [rough-notation](https://roughnotation.com/), a small JavaScript library to create and animate annotations on a web page.
 
 - [Visit website to see it in action](https://roughnotation.com/)
 - [Library docs](https://github.com/pshihn/rough-notation)
-
-![Rough Notation logo](https://roughnotation.com/images/social.png)
 
 ## Demo
 You can play around with the demo [here](https://stackblitz.com/edit/angular-n9jsex).
