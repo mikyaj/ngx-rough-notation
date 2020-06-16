@@ -20,7 +20,7 @@
     "@angular/platform-browser-dynamic": "~8.2.14",
     "@angular/router": "~8.2.14",
     "ngx-rough-notation": "file:dist/ngx-rough-notation",
-    "rough-notation": "^0.3.1",
+    "rough-notation": "^0.3.3",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"

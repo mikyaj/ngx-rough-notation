@@ -22,7 +22,7 @@
   "peerDependencies": {
     "@angular/common": "^8.2.14",
     "@angular/core": "^8.2.14",
-    "rough-notation": "^0.3.0"
+    "rough-notation": "^0.3.3"
   },
   "license": "MIT"
 }
