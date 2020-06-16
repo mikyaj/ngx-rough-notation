@@ -15,6 +15,7 @@ export class RoughNotationComponent implements AfterContentInit, OnDestroy {
   private _strokeWidth = 1;
   private _padding: RoughNotationPadding = 5;
   @Input() type: types;
+  @Input() multiline: boolean;
   @Input() animate = true;
   @Input() animationDuration = 800;
   @Input() iterations = 2;
@@ -63,7 +64,8 @@ export class RoughNotationComponent implements AfterContentInit, OnDestroy {
         animationDuration: this.animationDuration,
         strokeWidth: this._strokeWidth,
         padding: this._padding,
-        iterations: this.iterations
+        iterations: this.iterations,
+        multiline: this.multiline
       });
       if (this._show === true) {
         this.annotation.show();
