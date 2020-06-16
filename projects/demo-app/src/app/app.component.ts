@@ -14,6 +14,7 @@ export class AppComponent {
     highlight: false,
     strikeThrough: false,
     crossedOff: false,
-    group: false
+    group: false,
+    multiline: false
   };
 }

@@ -90,6 +90,30 @@
       </button>
     </div>
   </div>
+  <div class="box" style="background-color: #FFF8F1;">
+    <div class="content">
+      <h3>
+        <rough-notation type="highlight" color="#FFD54F" [show]="annotations.multiline" iterations="1" multiline="true">
+          Multiple lines
+        </rough-notation>
+      </h3>
+      <p>Ability to annotate inline content that can span multiple lines</p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan nisi hendrerit augue molestie tempus.
+        Phasellus purus quam, aliquet nec commodo quis, pharetra ut orci. <rough-notation type="highlight"
+          color="#FFD54F" [show]="annotations.multiline" multiline="true">Donec laoreet ligula nisl,
+          placerat molestie mauris luctus id. Fusce dapibus non libero nec lobortis. Nullam iaculis nisl ac eros
+          consequat, sit amet placerat
+          massa vulputate. Maecenas euismod volutpat ultrices. Pellentesque felis ex, ullamcorper in felis finibus,
+          feugiat
+          dignissim augue. </rough-notation> Integer malesuada non eros consectetur interdum. Mauris mollis non urna in
+        porta.
+      </p>
+      <button class="button" type="button" (click)="annotations.multiline = !annotations.multiline">
+        Annotate
+      </button>
+    </div>
+  </div>
   <div class="box" style="background-color: rgb(251, 233, 231);">
     <div class="content">
       <rough-notation-group [show]="annotations.group">
