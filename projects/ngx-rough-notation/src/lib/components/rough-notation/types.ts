@@ -4,17 +4,21 @@ export type types =
   | 'circle'
   | 'highlight'
   | 'strike-through'
-  | 'crossed-off';
+  | 'crossed-off'
+  | 'bracket';
 
-export type RoughNotationPadding = number | [number, number, number, number] | [number, number];
+export type FullPadding = [number, number, number, number];
+export type RoughPadding = number | [number, number] | FullPadding;
+export type BracketType = 'left' | 'right' | 'top' | 'bottom';
 
 export interface RoughNotationProperties {
   animate?: boolean;
   animationDuration?: number;
   color?: string;
   iterations?: number;
-  padding?: RoughNotationPadding;
+  padding?: RoughPadding;
   strokeWidth?: number;
+  brackets?: BracketType | BracketType[]; // defaults to 'right'
 }
 
 export interface Annotation extends RoughNotationProperties {

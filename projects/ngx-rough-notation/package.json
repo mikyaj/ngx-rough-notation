@@ -1,6 +1,6 @@
 {
   "name": "ngx-rough-notation",
-  "version": "0.2.1",
+  "version": "0.4.0",
   "description": "Angular wrapper for rough-notation",
   "author": "Mudasser Ajaz",
   "repository": {
@@ -22,7 +22,7 @@
   "peerDependencies": {
     "@angular/common": "^8.2.14",
     "@angular/core": "^8.2.14",
-    "rough-notation": "^0.3.3"
+    "rough-notation": "^0.4.0"
   },
   "license": "MIT"
 }

@@ -15,6 +15,9 @@ export class AppComponent {
     strikeThrough: false,
     crossedOff: false,
     group: false,
-    multiline: false
+    multiline: false,
+    bracket: false
   };
+  bracketsPadding = [2, 10];
+  brackets = ['left', 'right'];
 }

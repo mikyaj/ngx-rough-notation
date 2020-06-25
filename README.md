@@ -71,6 +71,9 @@ This property only applies to inline text. To annotate multiline text (each line
 #### iterations
 By default annotations are drawn in two iterations, e.g. when underlining, drawing from left to right and then back from right to left. Setting this property can let you configure the number of iterations. 
 
+#### brackets
+Value could be a string or an array of strings, each string being one of these values: **left, right, top, bottom**. When drawing a bracket, this configures which side(s) of the element to bracket. Default value is `right`.
+
 #### show
 This boolean value hide/show the annotation. By default set to `false`.  
 

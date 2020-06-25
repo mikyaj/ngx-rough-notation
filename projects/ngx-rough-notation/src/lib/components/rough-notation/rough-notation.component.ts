@@ -1,6 +1,7 @@
 import { Component, ElementRef, AfterContentInit, OnDestroy, Input } from '@angular/core';
 import { annotate } from 'rough-notation';
-import { Annotation, types, RoughNotationPadding } from './types';
+import { Annotation, types, RoughPadding } from './types';
+import { BracketType } from 'rough-notation/lib/model';
 
 @Component({
   // tslint:disable-next-line:component-selector
@@ -13,12 +14,13 @@ export class RoughNotationComponent implements AfterContentInit, OnDestroy {
   private _show = false;
   private _color = 'currentColor';
   private _strokeWidth = 1;
-  private _padding: RoughNotationPadding = 5;
+  private _padding: RoughPadding = 5;
   @Input() type: types;
   @Input() multiline: boolean;
   @Input() animate = true;
   @Input() animationDuration = 800;
   @Input() iterations = 2;
+  @Input() brackets: BracketType | BracketType[] =  'right';
 
   @Input()
   set color(value: string) {
@@ -37,7 +39,7 @@ export class RoughNotationComponent implements AfterContentInit, OnDestroy {
   }
 
   @Input()
-  set padding(value: RoughNotationPadding) {
+  set padding(value: RoughPadding) {
     this._padding = value;
     if (this.annotation) {
       this.annotation.padding = value;
@@ -65,7 +67,8 @@ export class RoughNotationComponent implements AfterContentInit, OnDestroy {
         strokeWidth: this._strokeWidth,
         padding: this._padding,
         iterations: this.iterations,
-        multiline: this.multiline
+        multiline: this.multiline,
+        brackets: this.brackets
       });
       if (this._show === true) {
         this.annotation.show();
